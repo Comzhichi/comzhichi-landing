@@ -103,7 +103,7 @@
 
 /* Chat preview */
 
-.ai__demo {
+.ai__preview {
   min-width: 0;
 }
 
@@ -271,7 +271,7 @@
     max-width: 760px;
   }
 
-  .ai__demo {
+  .ai__preview {
     width: 100%;
     max-width: 620px;
     margin: 0 auto;

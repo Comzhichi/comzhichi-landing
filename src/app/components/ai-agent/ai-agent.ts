@@ -16,24 +16,24 @@ interface Capability {
 export class AiAgent {
   protected readonly capabilities: readonly Capability[] = [
     {
-      icon: 'calendar',
-      title: 'Valida cruces de horario',
-      text: 'Consulta disponibilidad de grupos, aulas y docentes antes de confirmar.',
-    },
-    {
-      icon: 'graduation',
-      title: 'Sugiere avanzar o repetir',
-      text: 'Analiza notas, asistencia y evaluación final para recomendar el siguiente paso.',
-    },
-    {
       icon: 'book',
-      title: 'Explica qué falta para avanzar',
-      text: 'Resume el historial de un estudiante y responde en lenguaje natural.',
+      title: 'Recomienda tu siguiente curso',
+      text: 'Te ayuda a encontrar el idioma y el nivel que encajan contigo.',
+    },
+    {
+      icon: 'chart',
+      title: 'Explica tu avance',
+      text: 'Resume tus notas, asistencia y evaluación final en lenguaje claro.',
     },
     {
       icon: 'sparkles',
-      title: 'Ejecuta acciones',
-      text: 'Matricula, da de baja o asigna docentes a partir de una instrucción escrita.',
+      title: 'Te dice qué practicar',
+      text: 'Sugiere actividades según lo que necesitas reforzar.',
+    },
+    {
+      icon: 'calendar',
+      title: 'Resuelve dudas del campus',
+      text: 'Te indica dónde ver horarios, notas o tu siguiente clase.',
     },
   ];
 }

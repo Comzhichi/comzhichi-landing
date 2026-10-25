@@ -5,11 +5,12 @@
   display: flex;
   align-items: center;
   gap: 24px;
-  height: 78px;
+  height: 76px;
   padding: 0 max(var(--gutter), calc((100% - var(--content-max)) / 2));
-  background: var(--white);
-  border-bottom: 2px solid var(--sand-500);
-  box-shadow: 0 6px 20px rgba(36, 28, 40, 0.05);
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid rgba(140, 35, 156, 0.12);
+  box-shadow: 0 4px 18px rgba(36, 28, 40, 0.04);
+  backdrop-filter: blur(12px);
 }
 
 .nav {
@@ -17,15 +18,15 @@
   flex: 1;
   align-items: center;
   justify-content: center;
-  gap: clamp(12px, 2.4vw, 32px);
+  gap: clamp(14px, 2.2vw, 28px);
 }
 
 .nav a {
-  padding: 6px 2px;
+  padding: 8px 2px;
   border-bottom: 2px solid transparent;
-  color: var(--purple-600);
+  color: var(--ink-soft);
   font-size: 0.8125rem;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
   white-space: nowrap;
   transition:
@@ -34,7 +35,7 @@
 }
 
 .nav a:hover {
-  border-color: var(--sand-500);
+  border-color: var(--purple-600);
   color: var(--purple-700);
 }
 

@@ -1,8 +1,8 @@
 # Comzhichi Landing
 
-Landing page de Comzhichi, plataforma de gestión académica para centros de idiomas.
+Landing page de Comzhichi, academia de idiomas.
 
-Presenta la experiencia para estudiantes, apoderados, docentes y coordinación: matrícula por idioma y nivel, horarios sin cruces, asistencia, notas, evaluación final, historial por idioma y reportes de demanda.
+Presenta la oferta de inglés, portugués, francés y otros idiomas para estudiantes y familias. La página sigue una estructura de landing enfocada en conversión: hero con selector de cursos, beneficios del centro, proceso de inscripción, impacto y contacto.
 
 ## Stack
 
@@ -27,11 +27,9 @@ npm run build
 
 Los artefactos se generan en `dist/`.
 
-## Alcance del MVP
+## Alcance de la landing
 
-- Estudiantes: matrícula por idioma/nivel, horarios, historial, evaluación final y avance o repetición.
-- Apoderados: seguimiento de horarios, asistencia, notas y evaluaciones.
-- Docentes: cursos/grupos asignados, asistencia, calificaciones y observaciones.
-- Coordinación: alta de idiomas/niveles/cursos, asignación docente por especialidad, horarios sin cruces, bajas y reportes de demanda.
-
-Pagos online, videollamadas, aulas virtuales e integraciones LMS quedan fuera del alcance inicial.
+- Selector visual de cursos y enlaces de contacto.
+- Beneficios del centro, proceso de inscripción y resumen de impacto.
+- Enlaces de acceso al campus y legales como placeholders.
+- Pagos online, videollamadas, aulas virtuales e integraciones LMS quedan fuera del alcance inicial.

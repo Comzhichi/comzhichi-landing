@@ -1,45 +1,31 @@
 <section class="how" id="como-funciona" aria-labelledby="how-title">
   <div class="section-inner">
     <div class="section-head">
-      <p class="eyebrow">Cómo funciona</p>
-      <h2 class="section-title" id="how-title">Dos experiencias. Un mismo sistema.</h2>
+      <h2 class="section-title" id="how-title">¿Cómo funciona?</h2>
       <p class="section-lead">
-        Comzhichi se adapta a lo que necesitas: avanzar en tu idioma o coordinar toda la operación
-        del centro con la misma información.
+        Cuatro pasos simples para pasar de la primera consulta a tu primera clase.
       </p>
     </div>
 
-    <div class="how__tracks">
-      @for (track of tracks; track track.label) {
-        <article class="track" [class.track--center]="track.tone === 'center'">
-          <div class="track__head">
-            <span class="track__icon">
-              <app-icon [name]="track.icon" [size]="23"></app-icon>
-            </span>
-            <div>
-              <span class="track__label">{{ track.label }}</span>
-              <h3>{{ track.title }}</h3>
-            </div>
+    <ol class="steps">
+      @for (step of steps; track step.title; let index = $index) {
+        <li class="step">
+          <span class="step__number" aria-hidden="true">{{ index + 1 }}</span>
+          <div class="step__body">
+            <h3>{{ step.title }}</h3>
+            <p>{{ step.text }}</p>
           </div>
-
-          <ol class="track__steps">
-            @for (step of track.steps; track step.title; let index = $index) {
-              <li>
-                <span class="track__number">{{ index + 1 }}</span>
-                <div>
-                  <strong>{{ step.title }}</strong>
-                  <p>{{ step.text }}</p>
-                </div>
-              </li>
-            }
-          </ol>
-
-          <a class="track__cta" [href]="track.ctaHref">
-            {{ track.ctaLabel }}
-            <app-icon name="arrow-right" [size]="16"></app-icon>
-          </a>
-        </article>
+        </li>
       }
-    </div>
+    </ol>
+
+    <p class="how__note">
+      ¿Listo para empezar?
+      <a
+        href="mailto:informes@comich.edu.pe?subject=Quiero%20informaci%C3%B3n%20sobre%20los%20cursos"
+      >
+        Solicita información
+      </a>
+    </p>
   </div>
 </section>

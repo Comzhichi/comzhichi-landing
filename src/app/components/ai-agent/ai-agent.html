@@ -1,11 +1,11 @@
-<section class="ai" id="ia" aria-labelledby="ai-title">
+<section class="ai" id="asistente" aria-labelledby="ai-title">
   <div class="section-inner ai__grid">
     <div class="ai__copy">
-      <p class="eyebrow eyebrow--light">Agente de IA</p>
-      <h2 id="ai-title">No solo responde: <span>ejecuta.</span></h2>
+      <p class="eyebrow eyebrow--light">Asistente de aprendizaje</p>
+      <h2 id="ai-title">Una ayuda extra para <span>no perderte.</span></h2>
       <p class="ai__lead">
-        Un agente funcional que entiende el contexto del centro, consulta la información real y
-        ejecuta operaciones mediante tool calling, respetando los permisos de cada usuario.
+        ¿No sabes qué curso elegir, qué practicar o qué te falta para avanzar? El asistente de
+        Comzhichi te orienta con información de tu propio recorrido, dentro del campus.
       </p>
 
       <ul class="ai__capabilities">
@@ -23,51 +23,51 @@
       </ul>
 
       <p class="ai__note">
-        El agente respeta los permisos de cada rol: estudiantes y apoderados consultan su avance,
-        docentes resumen sus grupos y coordinación ejecuta matrículas, bajas o asignaciones.
+        Disponible para estudiantes y familias. No reemplaza el acompañamiento de tus profesores: te
+        ayuda a aprovechar mejor tus clases.
       </p>
     </div>
 
-    <div class="ai__demo" aria-hidden="true">
+    <div class="ai__preview" aria-hidden="true">
       <div class="chat">
         <div class="chat__head">
           <span class="chat__avatar"><app-icon name="sparkles" [size]="18"></app-icon></span>
           <div>
-            <strong>Agente Comzhichi</strong>
-            <span class="chat__status"><i></i> En línea · permisos de coordinación</span>
+            <strong>Asistente Comzhichi</strong>
+            <span class="chat__status"><i></i> En línea · para estudiantes</span>
           </div>
         </div>
 
         <div class="chat__body">
-          <p class="chat__msg chat__msg--user">
-            Matricula a Valeria en Portugués B1, martes y jueves a las 7 p. m.
-          </p>
+          <p class="chat__msg chat__msg--user">Quiero pasar a Inglés C1. ¿Qué me falta?</p>
 
           <div class="chat__msg chat__msg--ai">
             <p>
-              Revisé la disponibilidad de Valeria. No hay cruces con Inglés B2 y el grupo tiene 4
-              vacantes.
+              Vas por buen camino. Te faltan 2 clases y la evaluación final. Tu writing va en 18/20,
+              pero te conviene practicar más speaking.
             </p>
             <div class="chat__tool">
               <app-icon name="check" [size]="14"></app-icon>
-              <span>validar_horario</span>
-              <b>0 conflictos</b>
+              <span>revisar_progreso</span>
+              <b>Inglés B2 · 78%</b>
             </div>
             <div class="chat__tool">
               <app-icon name="check" [size]="14"></app-icon>
-              <span>crear_matricula</span>
-              <b>confirmada</b>
+              <span>siguiente_paso</span>
+              <b>evaluación final</b>
             </div>
-            <p class="chat__done">Matrícula registrada. Notifiqué al apoderado.</p>
+            <p class="chat__done">
+              Te recomiendo el taller de conversación B2 antes de tu evaluación.
+            </p>
           </div>
         </div>
 
         <div class="chat__input">
-          <span>Escribe una instrucción...</span>
+          <span>Pregunta sobre tu curso...</span>
           <span class="chat__send"><app-icon name="send" [size]="16"></app-icon></span>
         </div>
       </div>
-      <p class="ai__caption">Ejemplo de interacción con tool calling</p>
+      <p class="ai__caption">Ejemplo de orientación dentro del campus</p>
     </div>
   </div>
 </section>

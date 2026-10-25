@@ -17,23 +17,23 @@ export class Students {
   protected readonly features: readonly StudentFeature[] = [
     {
       icon: 'calendar',
-      title: 'Matrícula por nivel',
-      text: 'Elige idioma, nivel y horario disponible antes de inscribirte.',
+      title: 'Tus cursos y horarios',
+      text: 'Consulta qué clases tienes esta semana y qué viene después.',
     },
     {
       icon: 'book',
-      title: 'Historial por idioma',
-      text: 'Cada curso conserva notas, asistencia y evaluaciones por separado.',
+      title: 'Notas y asistencia',
+      text: 'Revisa tu desempeño y las observaciones de tus profesores.',
     },
     {
       icon: 'graduation',
       title: 'Evaluación final',
-      text: 'Avanza al siguiente nivel o repite según tu resultado.',
+      text: 'Sabe si avanzas de nivel y qué necesitas para lograrlo.',
     },
     {
       icon: 'sparkles',
-      title: 'Qué te falta con IA',
-      text: 'Consulta tu avance y el siguiente paso según tu historial.',
+      title: 'Asistente de estudio',
+      text: 'Pregunta qué practicar o qué curso te conviene según tu avance.',
     },
   ];
 }
