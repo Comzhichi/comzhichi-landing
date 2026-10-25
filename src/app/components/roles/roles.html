@@ -1,0 +1,50 @@
+<section class="roles" id="roles" aria-labelledby="roles-title">
+  <div class="section-inner">
+    <div class="roles__head">
+      <div>
+        <p class="eyebrow">Roles</p>
+        <h2 id="roles-title">Un mismo sistema, una vista para cada rol.</h2>
+      </div>
+      <p class="roles__lead">
+        Permisos y experiencias diseñadas para que estudiantes, apoderados, docentes y coordinadores
+        trabajen sobre los mismos datos, sin depender de intermediarios.
+      </p>
+    </div>
+
+    <div class="roles__grid">
+      @for (role of roles; track role.name) {
+        <article class="role" [class.role--featured]="role.featured">
+          <div class="role__head">
+            <span
+              class="role__icon"
+              [class.role__icon--green]="role.tone === 'green'"
+              [class.role__icon--amber]="role.tone === 'amber'"
+            >
+              <app-icon [name]="role.icon" [size]="23"></app-icon>
+            </span>
+            <div>
+              <h3>{{ role.name }}</h3>
+              <span class="role__kicker">{{ role.kicker }}</span>
+            </div>
+          </div>
+
+          <p class="role__description">{{ role.description }}</p>
+
+          <ul class="role__points">
+            @for (point of role.points; track point) {
+              <li>
+                <app-icon name="check" [size]="15"></app-icon>
+                <span>{{ point }}</span>
+              </li>
+            }
+          </ul>
+        </article>
+      }
+    </div>
+
+    <p class="roles__note">
+      <app-icon name="user-check" [size]="16"></app-icon>
+      Accesos y permisos diferenciados para cada perfil del centro.
+    </p>
+  </div>
+</section>

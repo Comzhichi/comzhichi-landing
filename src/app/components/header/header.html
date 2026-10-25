@@ -1,0 +1,42 @@
+<header class="topbar">
+  <app-logo></app-logo>
+
+  <nav
+    id="menu-principal"
+    class="nav"
+    [class.nav--open]="menuOpen()"
+    aria-label="Navegación principal"
+  >
+    <a href="#estudiantes" (click)="closeMenu()">Estudiantes</a>
+    <a href="#modulos" (click)="closeMenu()">Módulos</a>
+    <a href="#roles" (click)="closeMenu()">Roles</a>
+    <a href="#ia" (click)="closeMenu()">Agente IA</a>
+    <a href="#como-funciona" (click)="closeMenu()">Cómo funciona</a>
+    <a href="#preguntas" (click)="closeMenu()">FAQ</a>
+    <a class="nav__login" href="#iniciar" (click)="closeMenu()">Iniciar sesión</a>
+  </nav>
+
+  <div class="actions">
+    <a class="login" href="#iniciar">Iniciar sesión</a>
+    <a class="btn btn--primary btn--sm" href="#demo">Solicitar demo</a>
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-controls="menu-principal"
+      [attr.aria-expanded]="menuOpen()"
+      [attr.aria-label]="menuOpen() ? 'Cerrar menú' : 'Abrir menú'"
+      (click)="toggleMenu()"
+    >
+      <app-icon [name]="menuOpen() ? 'close' : 'menu'" [size]="24"></app-icon>
+    </button>
+  </div>
+
+  <button
+    class="backdrop"
+    type="button"
+    tabindex="-1"
+    aria-hidden="true"
+    [class.backdrop--visible]="menuOpen()"
+    (click)="closeMenu()"
+  ></button>
+</header>

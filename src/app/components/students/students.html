@@ -1,0 +1,128 @@
+<section class="students" id="estudiantes" aria-labelledby="students-title">
+  <div class="section-inner students__grid">
+    <div class="students__copy">
+      <p class="eyebrow">Para estudiantes</p>
+      <h2 id="students-title">Tu avance, claro en <span>todos tus idiomas.</span></h2>
+      <p class="students__lead">
+        Matricúlate en el idioma y nivel que buscas, revisa tus horarios y sigue tu avance. Si
+        llevas más de un idioma, cada uno conserva su propio historial; al cerrar un nivel, tu
+        evaluación final define si avanzas o repites.
+      </p>
+
+      <ul class="students__features">
+        @for (feature of features; track feature.title) {
+          <li>
+            <span class="students__feature-icon">
+              <app-icon [name]="feature.icon" [size]="18"></app-icon>
+            </span>
+            <div>
+              <strong>{{ feature.title }}</strong>
+              <span>{{ feature.text }}</span>
+            </div>
+          </li>
+        }
+      </ul>
+
+      <div class="students__actions">
+        <a
+          class="btn btn--primary btn--lg"
+          href="mailto:informes@comich.edu.pe?subject=Quiero%20estudiar%20en%20Comzhichi"
+        >
+          Quiero estudiar
+          <app-icon name="arrow-right" [size]="18"></app-icon>
+        </a>
+        <a class="btn btn--outline btn--lg" href="#iniciar">Ya soy alumno</a>
+      </div>
+
+      <p class="students__note">
+        <app-icon name="user-check" [size]="16"></app-icon>
+        Los apoderados también pueden seguir el avance desde su propio acceso.
+      </p>
+    </div>
+
+    <div class="students__visual">
+      <div
+        class="student-app"
+        aria-hidden="true"
+        role="img"
+        aria-label="Vista previa del portal del estudiante con avance en Inglés B2 y Francés A2, próxima clase, evaluación final y recomendación de la IA"
+      >
+        <div class="student-app__head">
+          <span class="student-app__avatar">V</span>
+          <div class="student-app__hello">
+            <strong>Hola, Valeria</strong>
+            <span>2 idiomas activos</span>
+          </div>
+          <span class="student-app__bell"><app-icon name="bell" [size]="16"></app-icon></span>
+        </div>
+
+        <div class="student-app__tabs">
+          <span class="is-active">Mi resumen</span>
+          <span>Mis cursos</span>
+          <span>Notas</span>
+        </div>
+
+        <div class="student-app__body">
+          <div class="course-card">
+            <div class="course-card__top">
+              <span class="course-card__lang">EN</span>
+              <div>
+                <strong>Inglés B2</strong>
+                <small>Grupo A · María López</small>
+              </div>
+              <span class="course-card__status">En curso</span>
+            </div>
+            <div class="course-card__progress"><span style="width: 78%"></span></div>
+            <div class="course-card__meta">
+              <span>Avance 78%</span>
+              <span>Mar y jue · 7:00 p. m.</span>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <div class="course-card__top">
+              <span class="course-card__lang course-card__lang--sand">FR</span>
+              <div>
+                <strong>Francés A2</strong>
+                <small>Grupo B · Diego Ramos</small>
+              </div>
+              <span class="course-card__status">En curso</span>
+            </div>
+            <div class="course-card__progress course-card__progress--sand">
+              <span style="width: 45%"></span>
+            </div>
+            <div class="course-card__meta">
+              <span>Avance 45%</span>
+              <span>Lun y mié · 6:00 p. m.</span>
+            </div>
+          </div>
+
+          <div class="student-next">
+            <span class="student-next__icon"><app-icon name="clock" [size]="16"></app-icon></span>
+            <div>
+              <strong>Próxima clase</strong>
+              <span>Inglés B2 · Aula 3 · Hoy 7:00 p. m.</span>
+            </div>
+            <span class="student-next__tag">Confirmada</span>
+          </div>
+
+          <div class="student-ai">
+            <span class="student-ai__icon"><app-icon name="sparkles" [size]="17"></app-icon></span>
+            <div>
+              <strong>Qué te falta para avanzar</strong>
+              <p>Te faltan 2 clases y la evaluación final para pasar a Inglés C1.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="student-toast" aria-hidden="true">
+        <span class="student-toast__icon"><app-icon name="bell" [size]="15"></app-icon></span>
+        <div>
+          <strong>Nueva nota publicada</strong>
+          <span>Writing · 18/20</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,28 @@
+<section class="impact" id="impacto" aria-labelledby="impact-title">
+  <div class="section-inner">
+    <div class="section-head">
+      <p class="eyebrow">En números</p>
+      <h2 class="section-title" id="impact-title">
+        Una sola fuente de verdad para todo el centro.
+      </h2>
+      <p class="section-lead">
+        Estudiantes, docentes, apoderados y coordinación trabajan sobre los mismos datos, sin
+        duplicar registros ni depender de reportes manuales.
+      </p>
+    </div>
+
+    <div class="stats">
+      @for (stat of stats; track stat.label) {
+        <article class="stat">
+          <strong>{{ stat.value }}</strong>
+          <span>{{ stat.label }}</span>
+        </article>
+      }
+    </div>
+
+    <p class="impact__note">
+      <app-icon name="check" [size]="15"></app-icon>
+      Información centralizada y accesible desde cualquier navegador.
+    </p>
+  </div>
+</section>

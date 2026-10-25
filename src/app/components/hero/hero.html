@@ -1,0 +1,140 @@
+<section class="hero" id="inicio" aria-labelledby="hero-title">
+  <div class="hero__copy">
+    <p class="hero__eyebrow">
+      <span aria-hidden="true"></span> Para estudiantes y centros de idiomas
+    </p>
+    <h1 id="hero-title">Aprende, enseña y gestiona <span>en un solo lugar.</span></h1>
+    <p class="hero__lead">
+      Comzhichi conecta a estudiantes, apoderados, docentes y coordinación: matrícula por idioma y
+      nivel, horarios sin cruces, asistencia, notas y evaluación final, con un agente de IA que
+      ejecuta tareas por ti.
+    </p>
+    <div class="hero__actions">
+      <a class="btn btn--primary btn--lg" href="#estudiantes">
+        Quiero estudiar
+        <app-icon name="arrow-right" [size]="18"></app-icon>
+      </a>
+      <a class="btn btn--outline btn--lg" href="#demo">Solicitar demo</a>
+    </div>
+    <a class="hero__portal" href="#iniciar">
+      ¿Ya eres alumno? Ingresa a tu portal
+      <app-icon name="arrow-right" [size]="15"></app-icon>
+    </a>
+    <ul class="hero__trust" aria-label="Perfiles que usan la plataforma">
+      <li><app-icon name="check" [size]="15"></app-icon> Estudiantes</li>
+      <li><app-icon name="check" [size]="15"></app-icon> Apoderados</li>
+      <li><app-icon name="check" [size]="15"></app-icon> Docentes</li>
+      <li><app-icon name="check" [size]="15"></app-icon> Coordinación</li>
+    </ul>
+  </div>
+
+  <div class="hero__visual">
+    <div
+      class="mock"
+      role="img"
+      aria-label="Vista previa del panel de Comzhichi: matrículas, asistencia, horarios, notas, evaluación de nivel y agente de IA"
+    >
+      <div class="mock__chrome" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <b>app.comzhichi.com</b>
+      </div>
+
+      <div class="mock__body" aria-hidden="true">
+        <aside class="mock__sidebar">
+          <div class="mock__brand"><span>C</span> Comzhichi</div>
+
+          <nav class="mock__nav" aria-label="Navegación de ejemplo">
+            <span class="is-active"><app-icon name="chart" [size]="14"></app-icon> Resumen</span>
+            <span><app-icon name="calendar" [size]="14"></app-icon> Matrículas</span>
+            <span><app-icon name="clock" [size]="14"></app-icon> Horarios</span>
+            <span><app-icon name="book" [size]="14"></app-icon> Notas</span>
+            <span><app-icon name="graduation" [size]="14"></app-icon> Evaluación</span>
+            <span><app-icon name="chart" [size]="14"></app-icon> Reportes</span>
+            <span><app-icon name="sparkles" [size]="14"></app-icon> Agente IA</span>
+          </nav>
+
+          <div class="mock__user">
+            <span>CM</span>
+            <div>
+              <strong>Coordinación</strong>
+              <small>Vista general</small>
+            </div>
+          </div>
+        </aside>
+
+        <div class="mock__main">
+          <div class="mock__top">
+            <div>
+              <strong>Resumen académico</strong>
+              <small>Ciclo 2026 · Abril</small>
+            </div>
+            <span class="mock__live">En vivo</span>
+          </div>
+
+          <div class="mock__stats">
+            <div>
+              <span>Matrículas</span>
+              <strong>248</strong>
+              <small>+12 este ciclo</small>
+            </div>
+            <div>
+              <span>Asistencia</span>
+              <strong>94%</strong>
+              <small>Promedio general</small>
+            </div>
+            <div>
+              <span>Cruces</span>
+              <strong>0</strong>
+              <small>Validación IA</small>
+            </div>
+          </div>
+
+          <div class="mock__schedule">
+            <div class="mock__schedule-head">
+              <strong>Horarios de hoy</strong>
+              <span>Ver calendario</span>
+            </div>
+            <div class="mock__row">
+              <span class="mock__time">08:00</span>
+              <div>
+                <strong>Inglés B1 · Grupo A</strong>
+                <small>María López · Aula 3</small>
+              </div>
+              <span class="mock__tag">En curso</span>
+            </div>
+            <div class="mock__row">
+              <span class="mock__time">10:30</span>
+              <div>
+                <strong>Francés A2 · Grupo B</strong>
+                <small>Diego Ramos · Aula 1</small>
+              </div>
+              <span class="mock__tag mock__tag--next">Próximo</span>
+            </div>
+            <div class="mock__row mock__row--last">
+              <span class="mock__time">18:00</span>
+              <div>
+                <strong>Portugués B1 · Grupo C</strong>
+                <small>Ana Torres · Aula 2</small>
+              </div>
+              <span class="mock__tag mock__tag--open">Abierto</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ai-float" aria-hidden="true">
+      <div class="ai-float__head">
+        <span><app-icon name="sparkles" [size]="14"></app-icon></span>
+        Agente IA
+      </div>
+      <p>“Matricula a Diego en Francés A2, martes y jueves por la noche.”</p>
+      <div class="ai-float__result">
+        <app-icon name="check" [size]="14"></app-icon>
+        Horario validado · 0 cruces
+      </div>
+    </div>
+  </div>
+</section>

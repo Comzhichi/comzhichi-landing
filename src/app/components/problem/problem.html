@@ -1,0 +1,38 @@
+<section class="problem" id="problema" aria-labelledby="problem-title">
+  <div class="section-inner problem__grid">
+    <div class="problem__intro">
+      <p class="eyebrow">Para el centro</p>
+      <h2 id="problem-title">
+        La información del centro no debería vivir en
+        <span>carpetas sueltas.</span>
+      </h2>
+      <p>
+        Cuando matrículas, asistencia, notas y evaluaciones están dispersas, el equipo no puede
+        saber en qué nivel está cada estudiante ni qué le falta para avanzar. Las familias pierden
+        visibilidad y las decisiones se toman a ciegas.
+      </p>
+      <p class="problem__note">
+        El resultado: datos duplicados, cruces de horario, evaluaciones sin trazabilidad y reportes
+        que llegan tarde.
+      </p>
+    </div>
+
+    <div class="problem__list">
+      @for (issue of issues; track issue.title) {
+        <article class="problem__item">
+          <span
+            class="problem__icon"
+            [class.problem__icon--teal]="issue.tone === 'teal'"
+            [class.problem__icon--amber]="issue.tone === 'amber'"
+          >
+            <app-icon [name]="issue.icon" [size]="22"></app-icon>
+          </span>
+          <div>
+            <h3>{{ issue.title }}</h3>
+            <p>{{ issue.text }}</p>
+          </div>
+        </article>
+      }
+    </div>
+  </div>
+</section>

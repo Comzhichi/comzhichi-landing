@@ -1,0 +1,31 @@
+<section class="benefits" id="modulos" aria-labelledby="modules-title">
+  <div class="section-inner">
+    <div class="section-head">
+      <p class="eyebrow">Módulos</p>
+      <h2 class="section-title" id="modules-title">Todo el ciclo académico, conectado.</h2>
+      <p class="section-lead">
+        Una sola fuente de verdad para la operación del centro: desde la matrícula hasta el reporte
+        que ayuda a planificar el siguiente ciclo.
+      </p>
+    </div>
+
+    <div class="benefits__grid">
+      @for (module of modules; track module.title) {
+        <article class="benefit">
+          <div class="benefit__head">
+            <span
+              class="benefit__icon"
+              [class.benefit__icon--green]="module.tone === 'green'"
+              [class.benefit__icon--amber]="module.tone === 'amber'"
+            >
+              <app-icon [name]="module.icon" [size]="24"></app-icon>
+            </span>
+            <span class="benefit__tag">{{ module.tag }}</span>
+          </div>
+          <h3>{{ module.title }}</h3>
+          <p>{{ module.text }}</p>
+        </article>
+      }
+    </div>
+  </div>
+</section>
