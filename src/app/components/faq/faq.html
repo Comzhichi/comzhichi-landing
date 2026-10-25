@@ -1,0 +1,36 @@
+<section class="faq" id="preguntas" aria-labelledby="faq-title">
+  <div class="section-inner faq__grid">
+    <div class="faq__intro">
+      <p class="eyebrow">Preguntas frecuentes</p>
+      <h2 id="faq-title">Lo que necesitas saber antes de empezar.</h2>
+      <p class="faq__lead">
+        Para estudiantes que quieren avanzar y para equipos que quieren ordenar su operación.
+      </p>
+
+      <aside class="faq__contact">
+        <span class="faq__contact-icon"><app-icon name="mail" [size]="20"></app-icon></span>
+        <h3>¿Hablamos?</h3>
+        <p>Si eres estudiante o representas a un centro, escríbenos y te orientamos.</p>
+        <a class="faq__mail" href="mailto:informes@comich.edu.pe">
+          informes@comich.edu.pe
+          <app-icon name="arrow-right" [size]="15"></app-icon>
+        </a>
+        <a class="faq__demo" href="#demo">
+          Solicitar una demo
+          <app-icon name="arrow-right" [size]="15"></app-icon>
+        </a>
+      </aside>
+    </div>
+
+    <div class="faq__list">
+      @for (item of items; track item.question; let first = $first) {
+        <details class="faq__item" [open]="first">
+          <summary>
+            <span>{{ item.question }}</span>
+          </summary>
+          <p>{{ item.answer }}</p>
+        </details>
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,12 @@
+:host {
+  display: block;
+}
+
+.page {
+  width: 100%;
+  background: var(--white);
+}
+
+main {
+  display: block;
+}
