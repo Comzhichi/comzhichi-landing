@@ -1,0 +1,111 @@
+.impact {
+  padding: clamp(58px, 7vw, 88px) max(var(--gutter), calc((100% - var(--content-max)) / 2));
+  background:
+    radial-gradient(720px 360px at 100% 0%, rgba(231, 201, 238, 0.42), transparent 62%),
+    linear-gradient(115deg, #fbf7ff, var(--purple-50));
+}
+
+.stats {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 8px;
+  border: 1px solid var(--sand-300);
+  border-radius: 22px;
+  background: var(--white);
+  box-shadow: var(--shadow-card);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 116px;
+  padding: 20px 14px;
+  text-align: center;
+}
+
+.stat + .stat {
+  border-left: 1px solid var(--sand-300);
+}
+
+.stat strong {
+  color: var(--purple-600);
+  font-size: clamp(1.95rem, 3.4vw, 2.45rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.stat span {
+  max-width: 16ch;
+  color: var(--ink-soft);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-wrap: balance;
+}
+
+.impact__note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 22px;
+  color: var(--ink-soft);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.impact__note app-icon {
+  flex-shrink: 0;
+  color: var(--teal-600);
+}
+
+@media (max-width: 920px) {
+  .stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .stat:nth-child(3) {
+    border-left: 0;
+  }
+
+  .stat:nth-child(n + 3) {
+    border-top: 1px solid var(--sand-300);
+  }
+}
+
+@media (max-width: 620px) {
+  .impact {
+    padding: 42px var(--gutter) 46px;
+  }
+
+  .stats {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 6px;
+  }
+
+  .stat {
+    min-height: 94px;
+  }
+
+  .stat + .stat,
+  .stat:nth-child(3) {
+    border-left: 0;
+  }
+
+  .stat + .stat {
+    border-top: 1px solid var(--sand-300);
+  }
+
+  .impact__note {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
