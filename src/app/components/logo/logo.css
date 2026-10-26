@@ -39,10 +39,6 @@
   color: var(--white);
 }
 
-.logo--light .logo__mark {
-  filter: brightness(0) invert(1);
-}
-
 @media (max-width: 920px) {
   .logo__mark {
     width: 36px;

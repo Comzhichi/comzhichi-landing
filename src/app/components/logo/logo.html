@@ -1,5 +1,11 @@
 <a class="logo" [class.logo--light]="light()" href="#inicio" aria-label="Comzhichi, ir al inicio">
-  <img class="logo__mark" [src]="logoSrc" alt="" width="867" height="808" />
+  <img
+    class="logo__mark"
+    [src]="light() ? logoLightSrc : logoSrc"
+    alt=""
+    width="867"
+    height="808"
+  />
   <span class="logo__text">
     <strong>Comzhichi</strong>
     <span>Academia de idiomas</span>
