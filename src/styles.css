@@ -127,7 +127,7 @@ textarea {
   width: 22px;
   height: 2px;
   border-radius: 999px;
-  background: var(--sand-500);
+  background: var(--purple-600);
 }
 
 .eyebrow--light {
@@ -135,7 +135,7 @@ textarea {
 }
 
 .eyebrow--light::before {
-  background: var(--sand-300);
+  background: var(--purple-100);
 }
 
 .section-head {
@@ -181,7 +181,7 @@ main:focus {
   height: 3px;
   margin: 14px auto 0;
   border-radius: 999px;
-  background: linear-gradient(90deg, var(--purple-600), var(--sand-500));
+  background: linear-gradient(90deg, var(--purple-600), var(--purple-200));
 }
 
 .btn {
@@ -216,15 +216,17 @@ main:focus {
 }
 
 .btn--primary {
-  background: var(--purple-600);
-  border-color: var(--purple-600);
-  color: var(--white);
-  box-shadow: 0 6px 14px rgba(140, 35, 156, 0.18);
+  background: var(--sand-300);
+  border-color: var(--sand-300);
+  color: var(--purple-700);
+  box-shadow: 0 6px 16px rgba(232, 161, 107, 0.26);
 }
 
 .btn--primary:hover {
-  background: var(--purple-700);
-  border-color: var(--purple-700);
+  background: var(--sand-500);
+  border-color: var(--sand-500);
+  color: var(--purple-700);
+  box-shadow: 0 8px 20px rgba(232, 161, 107, 0.34);
 }
 
 .btn--outline {

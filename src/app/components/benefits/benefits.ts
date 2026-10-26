@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Icon, type IconName } from '../icon/icon';
 
-type BenefitTone = 'purple' | 'green' | 'amber';
+type BenefitTone = 'purple' | 'green';
 
 interface Benefit {
   icon: IconName;
@@ -32,13 +32,13 @@ export class Benefits {
     },
     {
       icon: 'globe',
-      tone: 'amber',
+      tone: 'purple',
       title: 'Variedad de cursos',
       text: 'Inglés, portugués, francés y más, con niveles y horarios según tu objetivo.',
     },
     {
       icon: 'graduation',
-      tone: 'purple',
+      tone: 'green',
       title: 'Profesores especializados',
       text: 'Docentes con experiencia que explican, corrigen y acompañan tu aprendizaje.',
     },

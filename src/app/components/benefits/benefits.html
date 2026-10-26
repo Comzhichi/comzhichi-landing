@@ -11,11 +11,7 @@
     <div class="benefits__grid">
       @for (benefit of benefits; track benefit.title) {
         <article class="benefit">
-          <span
-            class="benefit__icon"
-            [class.benefit__icon--green]="benefit.tone === 'green'"
-            [class.benefit__icon--amber]="benefit.tone === 'amber'"
-          >
+          <span class="benefit__icon" [class.benefit__icon--green]="benefit.tone === 'green'">
             <app-icon [name]="benefit.icon" [size]="24"></app-icon>
           </span>
           <h3>{{ benefit.title }}</h3>
