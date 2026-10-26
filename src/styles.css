@@ -12,7 +12,7 @@
   --sand-500: #e8a16b;
   --sand-300: #f1dfca;
 
-  --teal-600: #22927d;
+  --teal-600: #229c78;
   --teal-50: #edf7f4;
 
   --amber-600: #d98218;
@@ -181,7 +181,7 @@ main:focus {
   height: 3px;
   margin: 14px auto 0;
   border-radius: 999px;
-  background: linear-gradient(90deg, var(--purple-600), var(--purple-200));
+  background: linear-gradient(90deg, var(--purple-600), var(--teal-600));
 }
 
 .btn {

@@ -35,6 +35,10 @@
   letter-spacing: -0.045em;
 }
 
+.stat:nth-child(even) strong {
+  color: var(--teal-600);
+}
+
 .stat span {
   display: block;
   margin-bottom: 6px;
