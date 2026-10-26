@@ -1,4 +1,5 @@
-import { Component, input } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, inject, input } from '@angular/core';
 
 @Component({
   selector: 'app-logo',
@@ -7,4 +8,6 @@ import { Component, input } from '@angular/core';
 })
 export class Logo {
   readonly light = input(false);
+  private readonly document = inject(DOCUMENT);
+  readonly logoSrc = new URL('logo.png?v=2', this.document.baseURI).href;
 }
