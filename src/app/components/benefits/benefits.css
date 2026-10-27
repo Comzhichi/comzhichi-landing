@@ -1,6 +1,6 @@
 .benefits {
   padding: clamp(58px, 7vw, 86px) max(var(--gutter), calc((100% - var(--content-max)) / 2));
-  background: linear-gradient(180deg, var(--white) 0%, #fbf8ff 100%);
+  background: var(--white);
 }
 
 .benefits__grid {

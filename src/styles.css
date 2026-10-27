@@ -371,6 +371,24 @@ main:focus {
 }
 
 /* =========================================================
+   Testimonials section
+   ========================================================= */
+.testimonials-section {
+  padding: clamp(46px, 6vw, 72px) max(var(--gutter), calc((100% - var(--content-max)) / 2));
+  background: linear-gradient(135deg, var(--purple-600) 0%, var(--teal-600) 55%, var(--white) 100%);
+  color: var(--white);
+}
+
+.testimonials-section .section-title,
+.testimonials-section .section-lead {
+  color: var(--white);
+}
+
+.testimonials-section .section-title::after {
+  background: var(--white);
+}
+
+/* =========================================================
    Testimonials
    ========================================================= */
 .testimonials {

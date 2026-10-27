@@ -1,7 +1,6 @@
 .impact {
   padding: clamp(58px, 7vw, 86px) max(var(--gutter), calc((100% - var(--content-max)) / 2));
-  background:
-    radial-gradient(680px 360px at 100% 0%, rgba(231, 201, 238, 0.42), transparent 64%), #fbf8ff;
+  background: linear-gradient(135deg, var(--purple-600) 0%, var(--teal-600) 55%, var(--white) 100%);
 }
 
 .stats {
