@@ -371,6 +371,65 @@ main:focus {
 }
 
 /* =========================================================
+   Testimonials
+   ========================================================= */
+.testimonials {
+  max-width: var(--content-max);
+  margin: 40px auto 0;
+}
+
+.testimonials__title {
+  margin-bottom: 18px;
+  text-align: center;
+  color: var(--ink);
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.testimonials__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.testimonial {
+  padding: 22px;
+  border: 1px solid var(--purple-100);
+  border-radius: var(--radius-md);
+  background: var(--white);
+  text-align: center;
+}
+
+.testimonial__avatar {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.testimonial__quote {
+  margin-bottom: 12px;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.testimonial__author {
+  color: var(--purple-600);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .testimonials__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* =========================================================
    Motion preferences
    ========================================================= */
 @media (prefers-reduced-motion: reduce) {
