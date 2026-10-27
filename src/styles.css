@@ -181,7 +181,7 @@ main:focus {
   height: 3px;
   margin: 14px auto 0;
   border-radius: 999px;
-  background: linear-gradient(90deg, var(--purple-600), var(--teal-600));
+  background: var(--purple-600);
 }
 
 .btn {
@@ -203,7 +203,6 @@ main:focus {
     background-color 0.18s ease,
     border-color 0.18s ease,
     color 0.18s ease,
-    box-shadow 0.18s ease,
     transform 0.18s ease;
 }
 
@@ -219,14 +218,12 @@ main:focus {
   background: var(--sand-300);
   border-color: var(--sand-300);
   color: var(--purple-700);
-  box-shadow: 0 6px 16px rgba(232, 161, 107, 0.26);
 }
 
 .btn--primary:hover {
   background: var(--sand-500);
   border-color: var(--sand-500);
   color: var(--purple-700);
-  box-shadow: 0 8px 20px rgba(232, 161, 107, 0.34);
 }
 
 .btn--outline {
@@ -255,7 +252,6 @@ main:focus {
   background: var(--white);
   border-color: var(--white);
   color: var(--purple-700);
-  box-shadow: 0 8px 20px rgba(36, 28, 40, 0.16);
 }
 
 .btn--light:hover {
