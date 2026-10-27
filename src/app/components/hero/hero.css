@@ -137,19 +137,19 @@
 }
 
 .hero__orb--one {
-  top: -48px;
-  right: -24px;
-  width: 190px;
-  height: 190px;
+  top: -60px;
+  right: -30px;
+  width: 260px;
+  height: 260px;
   background: radial-gradient(circle, rgba(241, 223, 202, 0.95), rgba(241, 223, 202, 0));
 }
 
 .hero__orb--two {
-  bottom: -70px;
-  left: -54px;
-  width: 230px;
-  height: 230px;
-  background: radial-gradient(circle, rgba(130, 199, 179, 0.38), rgba(130, 199, 179, 0));
+  bottom: -80px;
+  left: -60px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(130, 199, 179, 0.55), rgba(130, 199, 179, 0));
 }
 
 .course-picker {
