@@ -438,6 +438,63 @@ main:focus {
 }
 
 /* =========================================================
+   Languages (idiomas disponibles)
+   ========================================================= */
+.languages {
+  padding: clamp(40px, 5vw, 60px) max(var(--gutter), calc((100% - var(--content-max)) / 2));
+  background: var(--white);
+}
+
+.languages__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px 32px;
+  max-width: var(--content-max);
+  margin: 0 auto;
+}
+
+.languages__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 96px;
+}
+
+.languages__item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--purple-100);
+  box-shadow: 0 6px 16px rgba(36, 28, 40, 0.08);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.languages__item:hover img {
+  transform: scale(1.08);
+  border-color: var(--purple-600);
+}
+
+.languages__item span {
+  color: var(--ink);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+@media (max-width: 620px) {
+  .languages__item {
+    width: 72px;
+  }
+
+  .languages__item img {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+/* =========================================================
    Motion preferences
    ========================================================= */
 @media (prefers-reduced-motion: reduce) {
