@@ -8,7 +8,7 @@ Presenta la oferta de inglés, portugués, francés y otros idiomas para estudia
 
 - Angular 22
 - CSS
-- Sin backend: los accesos al portal y los enlaces legales son placeholders.
+- El botón "Iniciar sesión" redirige al login del frontend (http://localhost:4200/auth/login). Los enlaces legales siguen siendo placeholders.
 
 ## Desarrollo
 
