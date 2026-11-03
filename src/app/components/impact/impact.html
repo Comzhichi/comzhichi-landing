@@ -1,13 +1,10 @@
 <section class="impact" id="impacto" aria-labelledby="impact-title">
   <div class="section-inner">
     <div class="section-head">
-      <p class="eyebrow">En números</p>
-      <h2 class="section-title" id="impact-title">
-        Una sola fuente de verdad para todo el centro.
-      </h2>
+      <h2 class="section-title" id="impact-title">Nuestro impacto</h2>
       <p class="section-lead">
-        Estudiantes, docentes, apoderados y coordinación trabajan sobre los mismos datos, sin
-        duplicar registros ni depender de reportes manuales.
+        Una academia pensada para que avances con confianza, desde tu primera clase hasta tu
+        siguiente nivel.
       </p>
     </div>
 
@@ -16,13 +13,22 @@
         <article class="stat">
           <strong>{{ stat.value }}</strong>
           <span>{{ stat.label }}</span>
+          <p>{{ stat.text }}</p>
         </article>
       }
     </div>
 
     <p class="impact__note">
       <app-icon name="check" [size]="15"></app-icon>
-      Información centralizada y accesible desde cualquier navegador.
+      <span>
+        ¿No sabes en qué nivel estás?
+        <a
+          href="mailto:informes@comich.edu.pe?subject=Evaluaci%C3%B3n%20de%20nivel%20en%20Comzhichi"
+        >
+          Solicita tu evaluación de nivel
+        </a>
+        y te orientamos.
+      </span>
     </p>
   </div>
 </section>

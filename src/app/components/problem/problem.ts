@@ -19,28 +19,28 @@ interface Issue {
 export class Problem {
   protected readonly issues: readonly Issue[] = [
     {
-      icon: 'database',
+      icon: 'alert',
       tone: 'purple',
-      title: 'Datos fragmentados',
-      text: 'Matrículas, asistencia, notas y evaluaciones viven en archivos distintos, sin una vista única por estudiante.',
-    },
-    {
-      icon: 'clock',
-      tone: 'amber',
-      title: 'Horarios que se cruzan',
-      text: 'Asignar docentes, aulas y grupos sin traslapes exige revisar varias fuentes a mano.',
+      title: 'No sé por dónde empezar',
+      text: 'Elegir idioma, nivel y horario puede ser confuso. Te orientamos antes de matricularte.',
     },
     {
       icon: 'users',
       tone: 'teal',
-      title: 'Familias sin visibilidad',
-      text: 'Los apoderados dependen de consultas presenciales para conocer horarios, notas y avance.',
+      title: 'Me da miedo hablar',
+      text: 'La práctica constante y un ambiente cercano te ayudan a ganar confianza desde el inicio.',
+    },
+    {
+      icon: 'clock',
+      tone: 'amber',
+      title: 'Mi horario es complicado',
+      text: 'Revisamos las opciones disponibles para que el curso encaje con tu estudio, trabajo o familia.',
     },
     {
       icon: 'chart',
       tone: 'purple',
-      title: 'Decisiones sin datos',
-      text: 'La oferta del próximo ciclo se planifica sin analítica real de demanda por idioma, nivel y horario.',
+      title: 'No veo mi avance',
+      text: 'En tu campus tienes notas, asistencia y evaluación final para saber qué sigue.',
     },
   ];
 }

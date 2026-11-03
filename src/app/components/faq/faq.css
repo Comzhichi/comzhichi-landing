@@ -64,7 +64,7 @@
 }
 
 .faq__mail,
-.faq__demo {
+.faq__cta {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -82,16 +82,16 @@
 }
 
 .faq__mail:hover,
-.faq__demo:hover {
+.faq__cta:hover {
   text-decoration: underline;
 }
 
 .faq__mail app-icon,
-.faq__demo app-icon {
+.faq__cta app-icon {
   flex-shrink: 0;
 }
 
-.faq__demo {
+.faq__cta {
   color: var(--purple-700);
 }
 

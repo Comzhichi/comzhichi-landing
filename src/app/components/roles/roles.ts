@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { Icon, type IconName } from '../icon/icon';
 
-type RoleTone = 'purple' | 'green' | 'amber';
+type ProgramTone = 'purple' | 'green' | 'amber';
 
-interface Role {
+interface Program {
   icon: IconName;
-  tone: RoleTone;
+  tone: ProgramTone;
   name: string;
   kicker: string;
   description: string;
@@ -20,59 +20,58 @@ interface Role {
   styleUrl: './roles.css',
 })
 export class Roles {
-  protected readonly roles: readonly Role[] = [
+  protected readonly programs: readonly Program[] = [
+    {
+      icon: 'book',
+      tone: 'green',
+      name: 'Niños',
+      kicker: 'Primeros pasos',
+      description:
+        'Un espacio para descubrir el idioma con actividades dinámicas, confianza y acompañamiento cercano.',
+      points: [
+        'Aprendizaje con actividades prácticas',
+        'Confianza para empezar a hablar',
+        'Seguimiento para padres y apoderados',
+      ],
+    },
     {
       icon: 'graduation',
-      tone: 'purple',
-      name: 'Estudiantes',
-      kicker: 'Matrícula y avance',
+      tone: 'amber',
+      name: 'Adolescentes',
+      kicker: 'Refuerzo y confianza',
       description:
-        'Matricúlate por idioma y nivel, revisa horarios y sigue tu historial. Al cerrar el nivel, tu evaluación final define si avanzas o repites.',
+        'Mejora tu nivel, refuerza lo que aprendes en el colegio y gana seguridad para comunicarte.',
       points: [
-        'Matrícula por idioma y nivel',
-        'Historial completo entre ciclos',
-        'Evaluación final: avanza o repite',
+        'Apoyo para tus estudios',
+        'Práctica de conversación',
+        'Evaluación de avance por nivel',
       ],
+    },
+    {
+      icon: 'briefcase',
+      tone: 'purple',
+      name: 'Jóvenes y adultos',
+      kicker: 'Estudios, trabajo y viajes',
+      description: 'Aprende a tu ritmo para alcanzar metas académicas, profesionales o personales.',
+      points: [
+        'Objetivos claros desde el inicio',
+        'Opciones de horario para tu rutina',
+        'Niveles desde cero hasta avanzado',
+      ],
+      featured: true,
     },
     {
       icon: 'users',
       tone: 'green',
-      name: 'Apoderados',
-      kicker: 'Seguimiento familiar',
+      name: 'Padres y familias',
+      kicker: 'Acompañamiento',
       description:
-        'Sigue horarios, asistencia, notas y evaluaciones de tu representado, sin depender de consultas presenciales.',
+        'Encuentra el curso adecuado para tu hijo o hija y sigue su avance desde la plataforma.',
       points: [
-        'Horarios y asistencia al día',
-        'Notas y evaluaciones por idioma',
-        'Historial académico visible',
+        'Orientación durante la matrícula',
+        'Visibilidad del progreso académico',
+        'Comunicación con docentes y coordinación',
       ],
-    },
-    {
-      icon: 'presentation',
-      tone: 'amber',
-      name: 'Docentes',
-      kicker: 'Gestión de aula',
-      description:
-        'Revisa tus cursos y grupos asignados y registra asistencia, notas y observaciones en un solo flujo.',
-      points: [
-        'Cursos y grupos asignados',
-        'Asistencia, notas y observaciones',
-        'Evaluaciones de fin de nivel',
-      ],
-    },
-    {
-      icon: 'chart',
-      tone: 'purple',
-      name: 'Coordinadores',
-      kicker: 'Administración y analítica',
-      description:
-        'Crea la oferta, asigna docentes por especialidad, organiza horarios y planifica el siguiente ciclo con datos reales.',
-      points: [
-        'Alta de idiomas, niveles y cursos',
-        'Docentes por especialidad y horarios sin cruces',
-        'Reportes de demanda y gestión de bajas',
-      ],
-      featured: true,
     },
   ];
 }

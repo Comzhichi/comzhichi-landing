@@ -1,0 +1,76 @@
+<section class="courses" id="cursos" aria-labelledby="courses-title">
+  <div class="section-inner">
+    <div class="section-head">
+      <p class="eyebrow">Nuestros cursos</p>
+      <h2 class="section-title" id="courses-title">Elige el idioma que quieres dominar.</h2>
+      <p class="section-lead">
+        Inglés, portugués, francés y otros idiomas. Encuentra el curso que encaja contigo y avanza
+        con objetivos claros, práctica constante y acompañamiento docente.
+      </p>
+    </div>
+
+    <div class="courses__grid">
+      @for (course of courses; track course.name) {
+        <article
+          class="course-card"
+          [class.course-card--featured]="course.featured"
+          [class.course-card--teal]="course.tone === 'teal'"
+          [class.course-card--amber]="course.tone === 'amber'"
+          [class.course-card--neutral]="course.tone === 'neutral'"
+        >
+          <span class="course-card__watermark" aria-hidden="true">{{ course.code }}</span>
+
+          <div class="course-card__top">
+            <span class="course-card__badge">{{ course.code }}</span>
+            <span class="course-card__levels">{{ course.levels }}</span>
+          </div>
+
+          <span class="course-card__kicker">{{ course.kicker }}</span>
+          <h3>{{ course.name }}</h3>
+          <p class="course-card__description">{{ course.description }}</p>
+
+          <ul class="course-card__points">
+            @for (point of course.points; track point) {
+              <li>
+                <app-icon name="check" [size]="15"></app-icon>
+                <span>{{ point }}</span>
+              </li>
+            }
+          </ul>
+
+          <a class="course-card__cta" [href]="course.href">
+            {{ course.cta }}
+            <app-icon name="arrow-right" [size]="16"></app-icon>
+          </a>
+        </article>
+      }
+    </div>
+
+    <aside class="courses__level" aria-labelledby="courses-level-title">
+      <div class="courses__level-copy">
+        <span class="courses__level-icon">
+          <app-icon name="graduation" [size]="24"></app-icon>
+        </span>
+        <div>
+          <h3 id="courses-level-title">¿No sabes en qué nivel empezar?</h3>
+          <p>
+            Cuéntanos tu experiencia con el idioma y te ayudamos a encontrar tu punto de partida.
+          </p>
+        </div>
+      </div>
+      <a
+        class="btn btn--primary btn--lg"
+        href="mailto:informes@comich.edu.pe?subject=Evaluaci%C3%B3n%20de%20nivel%20en%20Comzhichi"
+      >
+        Evaluar mi nivel
+        <app-icon name="arrow-right" [size]="18"></app-icon>
+      </a>
+    </aside>
+
+    <p class="courses__foot">
+      <app-icon name="users" [size]="16"></app-icon>
+      También tenemos cursos para niños y adolescentes.
+      <a href="#programas">Conoce los programas por etapa</a>
+    </p>
+  </div>
+</section>

@@ -138,6 +138,7 @@
 
 .roles__note {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 8px;
@@ -151,6 +152,16 @@
 .roles__note app-icon {
   flex-shrink: 0;
   color: var(--purple-600);
+}
+
+.roles__note a {
+  color: var(--purple-700);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.roles__note a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 920px) {
